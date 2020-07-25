@@ -1,0 +1,24 @@
+{
+  "name": "candew",
+  "version": "0.0.1",
+  "description": "A small library for encapsulating access control rules.",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/christianalexander/candew"
+  },
+  "keywords": [
+    "access",
+    "permissions",
+    "authorization"
+  ],
+  "author": "Christian Alexander <christian@linux.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^3.9.7"
+  }
+}
