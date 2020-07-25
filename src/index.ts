@@ -53,3 +53,10 @@ export function all<Context = any, Target = any>(
     return results.every((r) => r);
   };
 }
+
+export function rejectOnError<Context = any, Target = any>(
+  validator: Validator<Context, Target>
+) {
+  return (context: Context, target: Target) =>
+    Promise.resolve(validator(context, target)).catch(() => false);
+}
